@@ -1,0 +1,76 @@
+
+#next-button-container {
+    position: absolute;
+    bottom: 0;
+    color: black;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#next-button {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+#next-button:hover .fa-arrow-down {
+    animation: arrow_jump 700ms none ease-in-out infinite;
+}
+
+.fa-arrow-down {
+    font-size: 70px;
+    position: relative;
+    top: 0;
+    color: #134eb3;
+}
+
+@keyframes arrow_jump {
+    25% {
+        top: 0;
+    }
+    50% {
+        top: 25px;
+    }
+    100% {
+        top: 0;
+    }
+
+}
+
+
+/*previous*/
+#prev-button-container {
+    position: absolute;
+    top: 0;
+    color: black;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#prev-button {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+#prev-button:hover .fa-arrow-up {
+    animation: arrow_jump 700ms none ease-in-out infinite;
+}
+
+.fa-arrow-up {
+    font-size: 70px;
+    position: relative;
+    top: 0;
+    color: #134eb3;
+}
+
